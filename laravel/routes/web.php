@@ -18,3 +18,8 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+
+Route::get('/settings', function () {
+    return redirect('/settings/profile');
+})->name('settings');
+Route::get('/settings/profile', 'Settings\ProfileController@index')->name('settings_profile');
