@@ -53,6 +53,11 @@
 
                                 <ul class="dropdown-menu">
                                     <li>
+                                        <a href="{{ route('settings') }}">
+                                            Settings
+                                        </a>
+                                    </li>
+                                    <li>
                                         <a href="{{ route('logout') }}"
                                             onclick="event.preventDefault();
                                                      document.getElementById('logout-form').submit();">
